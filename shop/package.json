@@ -1,16 +1,16 @@
 {
-  "name": "@pick-bazar/shop",
-  "version": "9.0.0",
+  "name": "@chemalot/shop",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "clean": "rimraf \"{.next,node_modules,__generated__,.cache,src/framework/graphql/**/*.d.ts}\"",
     "gql-clean": "rimraf \"{__generated__,.next,.cache,src/framework/graphql/**/*.d.ts}\"",
-    "dev:rest": "next dev -p 3003",
-    "build:rest": "next build",
+    "dev": "next dev -p 3003",
+    "build": "next build",
     "codegen": "node -r dotenv/config $(yarn bin)/graphql-let",
     "start": "next start",
     "lint": "next lint",
-    "postbuild:rest": "next-sitemap",
+    "postbuild": "next-sitemap",
     "prepare": "husky install"
   },
   "dependencies": {

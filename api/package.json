@@ -1,8 +1,8 @@
 {
-  "name": "@marvel-mock/api-rest",
-  "version": "1.0.0",
+  "name": "@chemalot/api",
+  "version": "0.0.1",
   "description": "",
-  "author": "RedQ, Inc",
+  "author": "Abilash Badri",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

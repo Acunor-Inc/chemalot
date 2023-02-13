@@ -1,28 +1,25 @@
 {
-  "name": "pickbazar-react",
-  "version": "9.0.0",
+  "name": "chemalot",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
-  "author": "RedQ, Inc.",
+  "author": "Abilash Badri",
   "workspaces": [
-    "admin/*",
+    "admin",
+    "api",
     "shop"
   ],
   "scripts": {
     "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\" && rimraf node_modules",
-    "gql-clean": "yarn workspaces run rimraf \"{__generated__,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\"",
-    "dev:shop-rest": "yarn workspace @pick-bazar/shop dev:rest",
-    "build:shop-rest": "yarn workspace @pick-bazar/shop build:rest",
-    "start:shop-rest": "yarn workspace @pick-bazar/shop start",
-    "dev:admin-rest": "yarn workspace @marvel/admin-rest dev",
-    "build:admin-rest": "yarn workspace @marvel/admin-rest build",
-    "start:admin-rest": "yarn workspace @marvel/admin-rest start",
-    "dev:shop-gql": "yarn workspace @pick-bazar/shop dev:gql",
-    "build:shop-gql": "yarn workspace @pick-bazar/shop build:gql",
-    "start:shop-gql": "yarn workspace @pick-bazar/shop start",
-    "dev:admin-gql": "yarn workspace @marvel/admin-graphql dev",
-    "build:admin-gql": "yarn workspace @marvel/admin-graphql build",
-    "start:admin-gql": "yarn workspace @marvel/admin-graphql start"
+    "dev:shop": "yarn workspace @chemalot/shop dev",
+    "build:shop": "yarn workspace @chemalot/shop build",
+    "start:shop": "yarn workspace @chemalot/shop start",
+    "dev:api": "yarn workspace @chemalot/api start:dev",
+    "build:api": "yarn workspace @chemalot/api build",
+    "start:api": "yarn workspace @chemalot/api start",
+    "dev:admin": "yarn workspace @chemalot/admin dev",
+    "build:admin": "yarn workspace @chemalot/admin build",
+    "start:admin": "yarn workspace @chemalot/admin start"
   },
   "devDependencies": {
     "prettier": "2.4.0",
