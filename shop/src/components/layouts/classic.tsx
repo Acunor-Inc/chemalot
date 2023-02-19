@@ -10,7 +10,7 @@ export default function ClassicLayout({ variables }: HomePageProps) {
   return (
     <>
       <Banner layout="classic" variables={variables.types} />
-      <PromotionSliders variables={variables.types} />
+      {/* <PromotionSliders variables={variables.types} /> */}
       <FilterBar variables={variables.categories} />
       <Element
         name="grid"

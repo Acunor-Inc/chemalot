@@ -52,12 +52,12 @@ const BannerWithSearch: React.FC<BannerProps> = ({ banners, layout }) => {
               <SwiperSlide key={idx}>
                 <div
                   className={cn('relative h-screen w-full', {
-                    'max-h-140': layout === 'standard',
+                    'max-h-140': (layout === 'standard' || layout === 'classic'), 
                     'max-h-[320px] md:max-h-[680px]': layout === 'minimal',
                   })}
                 >
                   <Image
-                    className="h-full min-h-140 w-full"
+                    className="h-full min-h-140 w-full pt-50"
                     src={banner.image?.original ?? productPlaceholder}
                     alt={banner.title ?? ''}
                     layout="fill"
